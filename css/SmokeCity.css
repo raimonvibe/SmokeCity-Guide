@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+}
+.cover{
+	background-color:#000;
+	/*height: 521px;*/
+	min-height: 80vh;
+ 	padding: 20px;
+	background-size: contain;
+	clip-path: polygon(0 0, 100% 0, 100% 87.3%, 0 100%);
+}
+.music nav ul li{
+	display: inline-block;
+	flex-direction: row;
+	float: right;
+	justify-content: space-between;
+	margin-right: 17px;
+	margin-top: 11.2px;
+	font-size: 16.5px;
+	font-family:aktiv-grostesk,sans-serif;;
+	color: #fff;
+}
+.music nav ul li:hover{
+	transition: .1s;
+}
+nav ul li a{
+	color: #000;
+	list-style: none;
+	background-color: gold;
+	padding: 10px 7px 10px 7px;
+	border-radius: 30px;
+	font-family:aktiv-grostesk,sans-serif;
+}
+.logo{
+	font-size: 28px;
+	font-family:;
+	padding:0 16px;
+	color: #fff;
+}
+#gold{
+	font-size: 35px;
+	color: gold;
+	background-color: #000;
+	border-radius: 10px;
+}
+.explore{
+	text-align: center;
+	margin-top: 130px;
+	color: #fff;
+}
+.explore #world{
+	font-size: 35px;
+	font-family: aktiv-grostesk,sans-serif;
+}
+.explore #stars{
+	font-size: 17.5px;
+	line-height: 30px;
+	font-family: aktiv-grostesk,sans-serif;
+	margin-top: 21px;
+}
+.explore button{
+	padding: 15px 29px;
+	font-size: 17.8px;
+	line-height: 25px;
+	border-radius: 25px;
+	border-style: none;
+	background-color: gold;
+	color: #000;
+	margin-top: 15px;
+	margin-left: 9px;
+}
+.explore button:hover{
+	background-color: #fff;
+	transition: .2s;
+}
+#city{
+	color: gold;
+}
+.upload{
+	display: flex;
+	margin-top: 110px;
+	padding: 0 16px;
+}
+.sell{
+	margin-top: 90px;
+}
+#music{
+	font-size: 39px;
+	font-family: aktiv-grostesk,sans-serif;
+	line-height: 52px;
+}
+#share{
+	height: 82px;
+	line-height:22.6px;
+	font-size: 20px;
+}
+#image{
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+}
+.sell button{
+	padding: 15px 30px;
+	border-radius: 19px;
+	background-color: gold;
+	font-size: 17.8px;
+	border-style: none;
+}
+.sell button:hover{
+	background-color: #fff;
+	transition: .2s;
+}
+.search{
+	margin-left: 150px;
+	text-align: center;
+	margin-top: -20px;
+}
+#place{
+	padding: 13px 39px;
+	font-size: 16.2px;
+	border-radius: 18px;
+	border-style: none;
+	background-color: darkgray;
+
+}
+#gray{
+	color:gold;
+	position: absolute;
+	margin-top: 13px;
+	padding-left: 13px;
+}
+#mack{
+	width: 288px;
+	height: 281px;
+	border-radius: 20px;
+}
+#mack:hover{
+	transition: all 2s ease-in-out;
+}
+.playlist{
+	display: flex;
+	/*margin-top: 60px;
+	justify-content: space-between;
+	padding: 0 16px;
+	padding-bottom: 50px;*/
+	justify-content: space-between;
+	grid-gap: 20px;
+	flex-wrap: wrap;
+	padding: 0 16px 50px 16px;
+	justify-content: center;
+}
+.playlist1{
+	margin-top: 90px;
+	padding: 0 17px;
+	background-color: #000;
+}
+#song{
+	color: gold;
+	font-family: aktiv-grostesk,sans-serif;
+	font-size: 21px;
+	padding-top: 40px;
+}
+.feat{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: aktiv-grostesk,sans-serif;
+	text-align: center;
+	margin-top: 17px;
+}
+.much{
+	color: gold;
+	font-family: aktiv-grostesk,sans-serif;
+	text-align: center;
+}
+.footer{
+	text-align: center;
+	background-color: #121212;
+}
+.span{
+	color: gold;
+}
+
+.socials{
+	justify-content: stretch;
+	margin-top: -25px;
+	font-size: 76px;
+}
+.socials:hover{
+	color:gold;
+}
+.about{
+	margin-top: 20px;
+	font-size: 21px;
+	line-height: 34px;
+	font-family: aktiv-grostesk,sans-serif;
+	color: gold;
+}
+.about:hover{
+	color: #fff;
+}
+.Account{
+	padding: 15px 17px;
+	font-size: 16.5px;
+	background-color: gold;
+	border-radius: 18px;
+	border-style: none;
+	margin-right: 10px;
+	font-family: aktiv-grostesk,sans-serif;
+	margin-top: 15px;
+}
+.smoke{
+	font-size: 39px;
+	font-family: aktiv-grostesk,sans-serif;
+	padding: 40px;
+	color: #fff;
+}
+.Account:hover{
+	background-color: #fff;
+}
+/* Mobile phones */
+@media (max-width: 600px) {
+  .upload {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .upload {
+    flex-direction: column;
+    align-items: center;
+  }
