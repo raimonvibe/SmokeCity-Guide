@@ -25,7 +25,7 @@ recognizeBtn.addEventListener("click", async () => {
       formData.append("audio", audioBlob, "sample.wav");
 
       try {
-        const response = await fetch("http://localhost:5000/recognize", {
+        const response = await fetch("/recognize", {
           method: "POST",
           body: formData
         });
