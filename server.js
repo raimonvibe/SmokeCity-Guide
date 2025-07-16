@@ -9,9 +9,10 @@ const FormData = require("form-data");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
+app.use(express.static('.'));
 
 const storage = multer.diskStorage({
   destination: "uploads/",
@@ -30,6 +31,10 @@ function buildSignature(stringToSign, secret) {
     .update(Buffer.from(stringToSign, "utf-8"))
     .digest("base64");
 }
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 app.post("/recognize", upload.single("audio"), async (req, res) => {
   if (!host || !accessKey || !accessSecret) {
